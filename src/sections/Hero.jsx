@@ -39,20 +39,20 @@ const Hero = () => {
                         height={500}
                         className='object-contain relative z-10'
                     />
-                </div>
-                <div className='flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px'>
-                    {shoes.map((shoe) => (
-                        <div key={shoe}>
-                            <ShoeCard
-                                imgURL={shoe}
-                                changeBigShoeImage=
-                                {() => { }}
-                                bigShoeImage=""
-                            />
-                        </div>
-                    ))}
-                </div>
 
+                    <div className='flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px'>
+                        {shoes.map((shoe) => (
+                            <div key={shoe}>
+                                <ShoeCard
+                                    imgURL={shoe}
+                                    changeBigShoeImage=
+                                    {() => { }}
+                                    bigShoeImage=""
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </section>
         </div>
     )
